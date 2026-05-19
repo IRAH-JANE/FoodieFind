@@ -1,0 +1,38 @@
+﻿# dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# environment secrets
+.env
+.env.*
+client/.env
+client/.env.*
+server/.env
+server/.env.*
+
+# allow examples
+!.env.example
+!client/.env.example
+!server/.env.example
+
+# build outputs
+dist/
+build/
+client/dist/
+server/dist/
+
+# logs
+*.log
+npm-debug.log*
+
+# generated files
+server/src/generated/
+client/src/generated/
+
+# temporary helper scripts
+client/add-toast-provider.cjs
+client/fix-admin-delete-message.cjs
+client/remove-favorites-back.cjs
+server/fix-admin-route.cjs
+server/fix-schema.cjs
