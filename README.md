@@ -1,6 +1,3 @@
-cd "C:\Users\irah jane\FoodieFind"
-
-@'
 # FoodieFind
 
 FoodieFind is a full-stack food discovery web app that helps users find real nearby food places, save favorites, write reviews, and manage imported restaurant data.
