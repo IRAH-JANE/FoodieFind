@@ -12,180 +12,93 @@ The app uses the user's browser location to discover nearby restaurants through 
 
 \## Features
 
-
-
 \- User registration and login
-
 \- JWT authentication
-
 \- Browser location detection
-
 \- Real nearby food place search
-
 \- Geoapify/OpenStreetMap restaurant discovery
-
 \- Save nearby places into FoodieFind
-
 \- Favorites system
-
 \- Restaurant details page
-
 \- User reviews and ratings
-
 \- User profile page
-
 \- Admin restaurant management
-
 \- Admin edit/delete restaurant records
-
 \- Toast notifications
-
 \- Responsive dark UI
-
 
 
 \## Tech Stack
 
-
-
 \### Frontend
 
-
-
 \- React
-
 \- TypeScript
-
 \- Vite
-
 \- Tailwind CSS
-
 \- Lucide React
-
 \- React Router
-
-
 
 \### Backend
 
-
-
 \- Node.js
-
 \- Express
-
 \- TypeScript
-
 \- Prisma
-
 \- PostgreSQL
-
 \- JWT authentication
-
 \- Geoapify API
-
-
 
 \## Project Structure
 
-
-
 ```text
-
 FoodieFind/
-
 ├── client/                 # React frontend
-
 │   ├── src/
-
 │   │   ├── components/
-
 │   │   ├── context/
-
 │   │   ├── pages/
-
 │   │   ├── services/
-
 │   │   ├── types/
-
 │   │   └── utils/
-
 │   └── package.json
-
 │
-
 ├── server/                 # Express backend
-
 │   ├── prisma/
-
 │   │   ├── migrations/
-
 │   │   ├── schema.prisma
-
 │   │   └── seed.ts
-
 │   ├── src/
-
 │   │   ├── config/
-
 │   │   ├── controllers/
-
 │   │   ├── middleware/
-
 │   │   ├── routes/
-
 │   │   └── utils/
-
 │   └── package.json
-
 │
-
 ├── docker-compose.yml
-
 ├── .gitignore
-
 └── README.md
-
 ```
-
-
 
 \## Environment Variables
 
-
-
 Create a `.env` file inside the `server` folder.
-
-
 
 Use this format:
 
-
-
 ```env
-
 DATABASE\_URL="postgresql://USER:PASSWORD@localhost:5432/foodiefind\_db?schema=public"
-
 PORT=5000
-
 CLIENT\_URL=http://localhost:5173
-
 JWT\_ACCESS\_SECRET=change\_this\_access\_secret
-
 JWT\_REFRESH\_SECRET=change\_this\_refresh\_secret
-
 GEOAPIFY\_API\_KEY=your\_geoapify\_api\_key
-
 ```
-
-
 
 Do not upload your real `.env` file to GitHub.
 
-
-
 The project should include a safe example file:
-
 
 
 ```text
@@ -195,13 +108,9 @@ server/.env.example
 ```
 
 
-
 \## How to Run Locally
 
-
-
 \### 1. Clone the repository
-
 
 
 ```bash
